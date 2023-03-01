@@ -1,0 +1,54 @@
+<section class="contact section" id="contact">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Contact</h1>
+        <h1 class="section-title-02">Contact</h1>
+        <div class="content">
+            <div class="contact-left">
+                <h2>Let's TakeUp</h2>
+                <div class="contact-list">
+                    <li>
+                        <h3 class="item-title"><fa-icon class="icons" [icon]="faPhone"></fa-icon> <label
+                                for="">Phone</label> </h3>
+                        <span>9502996657</span>
+                    </li>
+                    <li>
+                        <h3 class="item-title"><fa-icon class="icons" [icon]="faEnvelope"></fa-icon> <label
+                                for="">Email</label> </h3>
+                        <span> <a href="mailto:nagateja.avvaru@valuemomentum.com">nagateja.avvaru@valuemomentum.com</a>
+                        </span>
+                    </li>
+                    <li>
+                        <h3 class="item-title"><fa-icon class="icons" [icon]="faMap"></fa-icon> <label
+                                for="">Address</label> </h3>
+                        <span>Hyderabad, Telangana, India, </span>
+                    </li>
+                </div>
+            </div>
+
+            <div class="contact-right container">
+                <p>Exicted to Contact with you,<br><span> Go Ahead..</span></p>
+                <form action="" class="contact-form" (ngSubmit)="addContact()">
+                    <div class="first-row">
+                        <input type="text" placeholder="Name" required name="name" [(ngModel)]="addContactRequest.name">
+                    </div>
+                    <div class="second-row">
+                        <input type="email" placeholder="Email" required name="email"
+                            [(ngModel)]="addContactRequest.email">
+
+                        <input type="Subject" placeholder="Subject" required name="Subject"
+                            [(ngModel)]="addContactRequest.subject">
+                    </div>
+                    <div class="third-row">
+                        <textarea name="message" id="" cols="30" rows="7" placeholder="Message" name="message"
+                            [(ngModel)]="addContactRequest.message"></textarea>
+                    </div>
+
+                    <button class="btn" type="submit" routerLink="">Send <fa-icon style="color: white;" class="icons"
+                            [icon]="faPaperPlane"></fa-icon></button>
+                    <!-- <button class="btn btn-one" type="button" routerLink="contacts_data">Admin Login</button> -->
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>

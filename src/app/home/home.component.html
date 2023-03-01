@@ -1,0 +1,41 @@
+<header>
+    <!-- <div class="cursor" [style.top]="top" [style.left]="left" [ngClass]="{'expand':expand}"></div> -->
+    <div class="nav-bar">
+      <a href="#" class="logo"> Naga Teja</a>
+      <div class="navigation">
+        <div class="nav-items">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+<section class="home flex-center" id="home">
+    <div class="home-container">
+        <div class="media-icons">
+            <a href="https://www.youtube.com/@NagaTeja"><fa-icon [icon]="faYoutube"></fa-icon></a>
+            <a href="https://twitter.com/yuvanagateja?t=4Ji_zqj2LmHXTQ_vzhD9Ug&s=09"><fa-icon [icon]="faTwitter"></fa-icon></a>
+            <a href="https://www.linkedin.com/in/yuva-naga-teja"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+        </div>
+        <div class="info">
+            <h4>Hi, I am NagaTeja</h4>
+            <h5>Front-End Developer</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type. 
+            </p>
+            <a href="#contact" class="btn">Contact Me <fa-icon [icon]="faArrowAltCircleRight"></fa-icon></a>
+        </div>
+        <div class="home-img">
+            <img style="height: 400px; width: 400px;" src="/assets/images/my_img.png" alt="ProfileImage" srcset="">
+        </div>
+    </div>
+    <a href="#about" class="scroll-down">scroll down <fa-icon class="down-arrow" [icon]="faArrowAltCircleDown"></fa-icon> </a>
+</section>
+<app-about></app-about>

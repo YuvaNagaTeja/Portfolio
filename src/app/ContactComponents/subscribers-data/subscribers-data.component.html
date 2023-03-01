@@ -1,0 +1,28 @@
+<nav>
+  <div class="nav nav-tabs nav justify-content-center" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" routerLink="/contacts_data" role="tab"
+      aria-controls="nav-home" aria-selected="true">Contacts Data</a>
+
+    <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" routerLink="/subscribers" role="tab"
+      aria-controls="nav-profile" aria-selected="false">Subscribers</a>
+  </div>
+</nav>
+
+<div class="container my-5 col-xs-12">
+  <h1 class="mb-3">Subscriber's</h1>
+  <table class="table table-info table-hover" *ngIf="subscribers && subscribers.length > 0">
+
+    <thead>
+      <tr>
+        <th> Subscriber Emails</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let subscriber of subscribers">
+        <td>{{subscriber.email}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="!subscribers || subscribers.length <= 0">No Data</p>
+</div>

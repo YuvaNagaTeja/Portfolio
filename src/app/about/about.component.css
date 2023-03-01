@@ -1,0 +1,71 @@
+li{
+    list-style: none;
+}
+.container{
+    position: relative;
+    flex-direction: column;
+}
+.btn{
+    background: #6a59d1;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 25px;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+
+}
+.btn:hover{
+    background: #614fd0;
+}
+.about .container .content{
+    column-gap: 40px;
+    width: 100%;
+}
+.about-img{
+    position: relative;
+}
+/* .about-img img{
+    max-width: 100%;
+    min-width: 500px;
+} */
+.about-info .description{
+    max-width: 600px;
+}
+.about-info .description h3{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.about-info .description h4{
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-info .description h4 span{
+    color: #6a59d1;
+}
+.about-info .description p{
+    color: #777;
+    font-size: 1em;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #d7d7d7;
+}
+.about-info .professional-list{
+    display: flex;
+    column-gap: 30px;
+}
+.about-info .professional-list .list-item h3{
+    font-size: 2.5em;
+    font-weight: 700;
+
+}
+.about-info .professional-list .list-item span{
+    color: #777;
+    font-size: 0.9em;
+
+}

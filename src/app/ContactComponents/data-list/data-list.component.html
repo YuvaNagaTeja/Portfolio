@@ -1,0 +1,34 @@
+<nav>
+    <div class="nav nav-tabs nav justify-content-center" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" routerLink="/contacts_data" role="tab"
+            aria-controls="nav-home" aria-selected="true">Contacts Data</a>
+
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" routerLink="/subscribers" role="tab"
+            aria-controls="nav-profile" aria-selected="false">Subscribers</a>
+    </div>
+</nav>
+
+<div class="container my-5 col-xs-12">
+    <h1 class="mb-3">Data</h1>
+    <table class="table table-borderless table-hover" *ngIf="contact && contact.length > 0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of contact">
+                <td>{{data.name}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.subject}}</td>
+                <td>{{data.message}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!contact || contact && contact.length <= 0">No Data Found...Sry! <fa-icon style="color: red;"
+            [icon]="faFaceMeh"></fa-icon>
+    </p>
+</div>
